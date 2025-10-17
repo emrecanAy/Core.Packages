@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using System.Text;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Core.Application.Pipelines.Caching;
 public class CachingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
